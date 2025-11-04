@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="zh-Hant-TW">
-<head>
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://golden-demise.github.io/ml2025f/hw02/index.html -->
+<html lang="zh-Hant-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Required meta tags -->
-<meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- D3, jquery -->
@@ -15,7 +15,7 @@
 
 <title>作業二</title>
 <!-- https://alexlenail.me/NN-SVG/about.html -->
-<link rel="icon" href="../hw00/favicon.svg"/>
+<link rel="icon" href="https://golden-demise.github.io/ml2025f/hw00/favicon.svg">
 <style type="text/css">
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 
@@ -134,13 +134,13 @@
 
   <!-- ---------------------------------------------- -->
   <div class="row hw12 toprow">
-    <div class="col twenty"><a href="../hw00/index.html">00</a></div>
-    <div class="col twenty"><a href="../hw01/index.html">01</a></div>
-    <div class="col twenty"><a href="../hw02/index.html">02</a></div>
-    <div class="col twenty"><a href="../hw03/index.html">03</a></div>
-    <div class="col twenty"><a href="../hw04/index.html">04</a></div>
-    <div class="col twenty"><a href="../hw05/index.html">05</a></div>
-    <div class="col twenty"><a href="../hw06/index.html">06</a></div>
+    <div class="col twenty"><a href="https://golden-demise.github.io/ml2025f/hw00/index.html">00</a></div>
+    <div class="col twenty"><a href="https://golden-demise.github.io/ml2025f/hw01/index.html">01</a></div>
+    <div class="col twenty"><a href="https://golden-demise.github.io/ml2025f/hw02/index.html">02</a></div>
+    <div class="col twenty"><a href="https://golden-demise.github.io/ml2025f/hw03/index.html">03</a></div>
+    <div class="col twenty"><a href="https://golden-demise.github.io/ml2025f/hw04/index.html">04</a></div>
+    <div class="col twenty"><a href="https://golden-demise.github.io/ml2025f/hw05/index.html">05</a></div>
+    <div class="col twenty"><a href="https://golden-demise.github.io/ml2025f/hw06/index.html">06</a></div>
   </div>
 
   <!-- ------------------------------------------------>
@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次作業讓我實際體驗了醫學影像分割的完整流程,從資料準備、上傳至Google Drive、到使用Colab訓練3D U-Net模型。透過調整訓練筆數並嘗試不同的深度學習架構,我更深入理解了模型訓練的細節與挑戰。特別是在處理心臟肌肉影像這類醫療數據時,需要考量記憶體限制與運算資源。整體而言,這個作業不僅加強了我對影像分割技術的認識,也培養了實務操作能力。
     </div>
   </div>
 
@@ -161,48 +161,70 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <table>
-        <tr>
+        <tbody><tr>
           <th>總分</th>
           <th>完成後打勾</th>
           <th>配分</th>
           <th>分項描述</th>
         </tr>
         <tr>
-          <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td rowspan="4" id="myTotal">10</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked=""></td>
+          <td id="m1">4</td>
+          <td>Simple baseline - 完成colab baseline的訓練並產生權重檔
+          </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
-          <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked=""></td>
+          <td id="m2">4</td>
+          <td>Medium baseline - 調整並增加使用的訓練資料集(AICUP_training.json)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
-        </tr>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked=""></td>
+          <td id="m3">2</td>
+          <td>Strong baseline - 使用其他模型(例如. Attn U-Net、UNETR、Swin UNETR...等)，對心臟資料進行訓練，並繳交colab程式碼。
+        </td></tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>-10</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
+          <td id="m4">-10</td>
           <td>沒有寫100字心得</td>
         </tr>
 
-      </table>
+      </tbody></table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <table>
+        <tbody><tr>
+          <td> Simple Baseline Dice分數圖片
+          <img src="./hw2-2.png" width="100%" height="300">
+        </td></tr>
+        <tr>
+          <td> Medium Baseline Dice分數圖片
+          <img src="./hw2-m2.png" width="100%" height="300">
+        </td></tr>
+      </tbody></table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+<div class="row hw12 bottomrow">
+  <div class="col-md-12 twenty">
+    Strong Baseline colab連結: 
+    <a href="https://colab.research.google.com/drive/1SHM20rlVFo1DUB4LOkFMn9n60nczAxbF?usp=sharing">
+      https://colab.research.google.com/drive/1SHM20rlVFo1DUB4LOkFMn9n60nczAxbF?usp=sharing
+    </a>
+    <table>
+      <tbody><tr>
+        <td> Strong Baseline Dice分數圖片 使用了attention_unet
+        <img src="hw2-s.png" width="100%" height="300">
+      </td></tr>
+    </tbody></table>
+  </div>
+</div>
 
   <!-- ------------------------------------------------>
 
@@ -250,5 +272,6 @@
   }
 </script>
 
-</body>
-</html>
+
+
+</div></body></html>
